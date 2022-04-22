@@ -1,0 +1,130 @@
+/*
+! CSS Global Styling
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    height: 100vh;
+    background-color: #282d35;
+
+}
+
+
+/*
+! Navbar Component Styling
+*/
+
+.nav--icon {
+    width: 60px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+ 
+ nav {
+    padding: 30px 25px;
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    height: 100px;
+}
+
+.nav--logo_text {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav--title {
+    color: #DEEBF8;
+    font-weight: 600;
+}
+
+
+/*
+! Main Component Styling
+*/
+
+.main--wrapper{
+    display: flex;
+}
+.main--react_image{
+    flex: 1;
+}
+
+.main--image{
+    width: 350px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+.main--image::after{
+    transform:rotate(-50deg);
+
+}
+
+.main--image::before{
+    transform:rotate(57deg);
+
+}
+
+@keyframes rotate{
+
+    100%{
+      transform:rotate(360deg);
+    }
+  }
+
+main {
+    padding: 57px 50px;
+    color: #fff;   
+}
+
+.main--title{
+    margin: 0;
+    font-size: 39.06px;
+}
+
+.main--facts {
+    margin-top: 46px;
+    font-size: 16px;
+    flex: 1;
+}
+
+.main--facts > li {
+    line-height: 19px;
+    padding-block: 10px;
+    font-style: normal;
+}
+
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
+}
+
+/*
+! Footer Component Styling
+*/
+
+.footer{
+    padding: 30px 25px;
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    height: 100px;
+    color: #fff;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+
+
